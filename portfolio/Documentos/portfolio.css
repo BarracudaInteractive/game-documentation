@@ -1,17 +1,36 @@
 @font-face {
+    font-family: "Aptos";
+    src: url("Fuentes/aptos.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
     font-family: "Marker Twins";
     src: url("Fuentes/TwinMarker.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "Agency FB";
+    src: url("Fuentes/agency_fb.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 html{
     background-color:#4c4a72;
-    font-family: Marker Twins;
+    font-family: Agency FB;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     color: white;
+}
+
+.thin{
+    width: 690px;
+    display: inline-block;
 }
 
 .s16px{
@@ -42,6 +61,10 @@ html{
     text-align: right;
 }
 
+.logos{
+    padding: 16px;
+}
+
 .section{
     border-style: dashed;
     border-width: medium;
@@ -68,13 +91,22 @@ html{
 
 .menu{
     background-color: #aaa6f0;
-    position: sticky;
-    top: 0;
-    width: 100%;
+    list-style-type: none;
+    margin: 0px;
+    padding-top: 5%;
+    width: 26%;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
 }
 
 .option{
-    display: inline;
+    display:block;
     padding-right: 24px;
+    padding-top: 12px;
     font-size: 24px;
+}
+
+.away{
+    padding-left: 27%;
 }
